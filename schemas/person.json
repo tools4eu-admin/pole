@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Person",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "Unique identifier for the person"
+        },
+        "name": {
+            "type": "string",
+            "description": "Name of the person"
+        },
+        "dateOfBirth": {
+            "type": "string",
+            "format": "date",
+            "description": "Birthdate of the person"
+        },
+        "email": {
+            "type": "string",
+            "format": "email",
+            "description": "Email address of the person"
+        }
+    },
+    "required": [
+        "id",
+        "name"
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Event",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "Unique identifier for the event"
+        },
+        "name": {
+            "type": "string",
+            "description": "Name of the event"
+        },
+        "date": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Date and time of the event"
+        },
+        "locationId": {
+            "type": "string",
+            "description": "ID of the location where the event is held"
+        },
+        "participantIds": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "List of IDs of participants in the event"
+        }
+    },
+    "required": [
+        "id",
+        "name",
+        "date"
+    ]
+}

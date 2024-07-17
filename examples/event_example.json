@@ -1,0 +1,9 @@
+{
+    "id": "e1",
+    "name": "Conference",
+    "date": "2023-07-16T09:00:00Z",
+    "locationId": "l1",
+    "participantIds": [
+        "p1"
+    ]
+}
